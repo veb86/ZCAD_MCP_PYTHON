@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+# exported drawings and runtime state
+workspace/*
+!workspace/.gitkeep
+# temporary files of create_skill
+skills/.*.tmp

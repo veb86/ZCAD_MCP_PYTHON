@@ -1,0 +1,16 @@
+[project]
+name = "zcad-mcp-python"
+version = "0.1.0"
+description = "MCP server for ZCAD: Python DXF-analysis skills orchestrator and channel to the ZCAD Bridge"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["mcp[cli]>=2.0,<3", "ezdxf>=1.1", "httpx>=0.27"]
+
+[project.optional-dependencies]
+numpy = ["numpy>=1.24"]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "examples"]
+addopts = "-q"
